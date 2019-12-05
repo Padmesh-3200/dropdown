@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>DropDown</display-name>
+  
+ <servlet>
+  	<servlet-name>DropDown</servlet-name>
+	<servlet-class>com.drop.CountryServlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>DropDown</servlet-name>
+   <url-pattern>/dropdown</url-pattern>
+  </servlet-mapping>
+  
+ <servlet>
+  	<servlet-name>Helper</servlet-name>
+	<servlet-class>com.ajax.example.HelperServlet</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>Helper</servlet-name>
+   <url-pattern>/helper</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>JsonHelper</servlet-name>
+	<servlet-class>com.ajax.json.JsonHelper</servlet-class>  
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>JsonHelper</servlet-name>
+   <url-pattern>/jsonhelper</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>dropdown</welcome-file>
+  </welcome-file-list>
+ 
+</web-app>
